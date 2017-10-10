@@ -17,4 +17,19 @@ newAlphabet.push(code);
 // con un return para retornar el cifrado
 return newAlphabet.join("")
 }
+
 cipher()
+function decipher() {
+// Descifrando la palabra cifrada
+  for (j=0; j<newAlphabet.length; j++){
+// dentro del for realizarmos la condicion pedida, para ello crearemos un var
+//de la locacion del alfabeto.
+var cifri = [];
+var position1 = newAlphabet[j].charCodeAt();
+var position2 =((position1 +33)%26 +65 );
+var codeTwo = String.fromCharCode(position2);
+cifri.push(codeTwo);
+    }
+    return(cifri.join(""));
+}
+ decipher();
