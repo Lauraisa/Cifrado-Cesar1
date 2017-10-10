@@ -4,18 +4,20 @@ En este proyecto nos piden realizar lo siguiente.
 + Que al ingresar una frase este pueda decifralo con el _Cifrado cesar_, esto quiere decir que busque la posicion de la frase en el lenguaje `ASCII`.
 + que devuelva minúscula o mayúscula.
 
-## Pseudocodigo del Cifrado César
+> ## Pseudocodigo del Cifrado César
 
 ### Primero
+------
 Se crea una funcion _cifrar_.
-
 `function cipher ()`{  
  Dentro de la función se crea una variable  que contendra un mensaje, y como nos piden ingresar mayúscula y munúscula, le colocaremos dos metodos.                
  `var alfabeto` = **prompt("Ingresa el alfabeto").toUpperCase().toLowerCase();**
 ## Segundo
+----
   Una variable en donde se depositará los elementos convertidos a un _string_ llamado:  
  **var newArray = alphabet.split("");**   
 ## Tercero
+----
  Y por último el array con los nuevos valores; `var newAlphabet = [];`
  Realizaremos un bucle con for.
  Para ello realizaremos un ciclo `(i=0; i<newArray.length; i++)`
@@ -51,3 +53,4 @@ cipher() ```
 
 
     >Link del Diagrama de Flujo.
+    ![Diagrama de flujo](https://code2flow.com/XgSGAP.png )
