@@ -51,6 +51,28 @@ return newAlphabet.join("")
 }
 cipher() ```
 
+```js
+// Descifrando la palabra cifrada
+var cifri = [];
+for (j=0; j<newAlphabet.length; j++){
+// dentro del for realizarmos la condicion pedida, para ello crearemos un var
+//de la locacion del alfabeto.
+
+var position1 = newAlphabet[j].charCodeAt();
+var position2 =((position1 +33)%26 +65 );
+var codeTwo = String.fromCharCode(position2);
+cifri.push(codeTwo);
+}
+
+console.log(cifri.join(""));
+```
+
+
+
+
+
+
+
 
     >Link del Diagrama de Flujo.
     ![Diagrama de flujo](https://code2flow.com/XgSGAP.png )
