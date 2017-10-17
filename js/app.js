@@ -1,7 +1,7 @@
 //crearemos la primera funcion para cifrar
 function cipher (){
 // dentro de ella crearemos las variables.
-var alphabet = prompt("Ingresa el alfabeto").toUpperCase().toLowerCase();
+var alphabet = prompt("Ingresa el alfabeto").toUpperCase();
 var newArray = alphabet.split("");
 //  en la nueva varible newAlphabet se colocara los elementos nuevos
 var newAlphabet = [];
